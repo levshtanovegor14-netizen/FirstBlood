@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xshare share page</title>
+</head>
+<style>
+    @media all and (orientation : landscape) {
+        #container {
+            display: inline-block;
+            width: 56.5%;
+            height: 103.4vw;
+        }
+        .icon {
+            margin: 62.8vw auto 0;
+        }
+    }
+
+    @media all and (orientation : portrait) {
+        #container {
+            height: 100vh;
+            position: absolute;
+            width: 100vw;
+        }
+
+        .icon {
+            margin: 62.8vh auto 0;
+        }
+
+        body {
+            background-color: #b834ff;
+        }
+    }
+
+    body {
+        text-align: center;
+        margin: 0;
+    }
+    #container {
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("./bg.webp");
+    }
+    .icon {
+        width: 58px;
+        height: 58px;
+        background-repeat: round;
+        background-image: url("./icon.webp");
+    }
+    .content .title {
+        text-align: center;
+        font-weight: bold;
+        margin: 5px 0 4px;
+        font-size: 1.12em;
+        color:white;
+    }
+    .content .desc {
+        margin: 0 0;
+        text-align: center;
+        font-size: 0.88em;
+        color: white;
+    }
+
+    .download a {
+        display: block;
+        border-radius: 25px;
+        margin: 30px 55px;
+        font-weight: 700;
+        font-size: 1.28em;
+        padding: 10px 3px;
+        color: #0988FF;
+        background-color: #00FFFA;
+        text-align: center;
+        text-decoration: none;
+    }
+
+</style>
+<script type="text/javascript">
+function run() {
+    setTimeout(function () {
+        document.getElementById("download_link").click()
+    }, 200);
+}
+
+</script>
+<body onload="run()">
+<div id="container">
+    <div class="icon"></div>
+    <div class="content">
+        <p class="title">XShare</p>
+        <p class="desc">The Fastest transfer Tool<br/> Without Data!</p>
+        <div class="download"><a href="/XShare.apk" id="download_link">DOWNLOAD</a></div>
+    </div>
+</div>
+</body>
+</html>
